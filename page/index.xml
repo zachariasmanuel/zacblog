@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on zachariasmanuel.com</title>
-    <link>http://zachariasmanuel.github.io/page/</link>
+    <link>/page/</link>
     <description>Recent content in Pages on zachariasmanuel.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 23 Mar 2016 16:10:41 +0530</lastBuildDate>
-    <atom:link href="http://zachariasmanuel.github.io/page/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="/page/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>about</title>
-      <link>http://zachariasmanuel.github.io/about/</link>
+      <link>/about/</link>
       <pubDate>Wed, 23 Mar 2016 16:10:41 +0530</pubDate>
       
-      <guid>http://zachariasmanuel.github.io/about/</guid>
+      <guid>/about/</guid>
       <description>&lt;p&gt;This is sample content&lt;/p&gt;
 </description>
     </item>
