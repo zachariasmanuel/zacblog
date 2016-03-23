@@ -2,59 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>zachariasmanuel.com</title>
-    <link>http://zachariasmanuel.github.io/zacblog/</link>
+    <link>http://www.parakulam.com/</link>
     <description>Recent content on zachariasmanuel.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 23 Mar 2016 16:10:41 +0530</lastBuildDate>
-    <atom:link href="http://zachariasmanuel.github.io/zacblog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://www.parakulam.com/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>about</title>
-      <link>http://zachariasmanuel.github.io/zacblog/about/</link>
+      <link>http://www.parakulam.com/about/</link>
       <pubDate>Wed, 23 Mar 2016 16:10:41 +0530</pubDate>
       
-      <guid>http://zachariasmanuel.github.io/zacblog/about/</guid>
+      <guid>http://www.parakulam.com/about/</guid>
       <description>&lt;p&gt;This is sample content&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>The first post</title>
-      <link>http://zachariasmanuel.github.io/zacblog/article/the-first-post/</link>
+      <link>http://www.parakulam.com/article/the-first-post/</link>
       <pubDate>Wed, 23 Mar 2016 00:29:19 +0530</pubDate>
       
-      <guid>http://zachariasmanuel.github.io/zacblog/article/the-first-post/</guid>
+      <guid>http://www.parakulam.com/article/the-first-post/</guid>
       <description>&lt;p&gt;This is the first post&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>The first post</title>
-      <link>http://zachariasmanuel.github.io/zacblog/article/the-first-post/</link>
+      <link>http://www.parakulam.com/article/the-first-post/</link>
       <pubDate>Wed, 23 Mar 2016 00:29:19 +0530</pubDate>
       
-      <guid>http://zachariasmanuel.github.io/zacblog/article/the-first-post/</guid>
+      <guid>http://www.parakulam.com/article/the-first-post/</guid>
       <description>&lt;p&gt;This is the first post&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>The first post</title>
-      <link>http://zachariasmanuel.github.io/zacblog/article/the-first-post/</link>
+      <link>http://www.parakulam.com/article/the-first-post/</link>
       <pubDate>Wed, 23 Mar 2016 00:29:19 +0530</pubDate>
       
-      <guid>http://zachariasmanuel.github.io/zacblog/article/the-first-post/</guid>
+      <guid>http://www.parakulam.com/article/the-first-post/</guid>
       <description>&lt;p&gt;This is the first post&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>The first post</title>
-      <link>http://zachariasmanuel.github.io/zacblog/article/the-first-post/</link>
+      <link>http://www.parakulam.com/article/the-first-post/</link>
       <pubDate>Wed, 23 Mar 2016 00:29:19 +0530</pubDate>
       
-      <guid>http://zachariasmanuel.github.io/zacblog/article/the-first-post/</guid>
+      <guid>http://www.parakulam.com/article/the-first-post/</guid>
       <description>&lt;p&gt;This is the first post&lt;/p&gt;
 </description>
     </item>
