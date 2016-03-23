@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on zachariasmanuel.com</title>
-    <link>http://zachariasmanuel.github.io/post/</link>
+    <link>http://zachariasmanuel.github.io/zacblog/post/</link>
     <description>Recent content in Posts on zachariasmanuel.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 23 Mar 2016 00:29:19 +0530</lastBuildDate>
-    <atom:link href="http://zachariasmanuel.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://zachariasmanuel.github.io/zacblog/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>The first post</title>
-      <link>http://zachariasmanuel.github.io/article/the-first-post/</link>
+      <link>http://zachariasmanuel.github.io/zacblog/article/the-first-post/</link>
       <pubDate>Wed, 23 Mar 2016 00:29:19 +0530</pubDate>
       
-      <guid>http://zachariasmanuel.github.io/article/the-first-post/</guid>
+      <guid>http://zachariasmanuel.github.io/zacblog/article/the-first-post/</guid>
       <description>&lt;p&gt;This is the first post&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>The first post</title>
-      <link>http://zachariasmanuel.github.io/article/the-first-post/</link>
+      <link>http://zachariasmanuel.github.io/zacblog/article/the-first-post/</link>
       <pubDate>Wed, 23 Mar 2016 00:29:19 +0530</pubDate>
       
-      <guid>http://zachariasmanuel.github.io/article/the-first-post/</guid>
+      <guid>http://zachariasmanuel.github.io/zacblog/article/the-first-post/</guid>
       <description>&lt;p&gt;This is the first post&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>The first post</title>
-      <link>http://zachariasmanuel.github.io/article/the-first-post/</link>
+      <link>http://zachariasmanuel.github.io/zacblog/article/the-first-post/</link>
       <pubDate>Wed, 23 Mar 2016 00:29:19 +0530</pubDate>
       
-      <guid>http://zachariasmanuel.github.io/article/the-first-post/</guid>
+      <guid>http://zachariasmanuel.github.io/zacblog/article/the-first-post/</guid>
       <description>&lt;p&gt;This is the first post&lt;/p&gt;
 </description>
     </item>
