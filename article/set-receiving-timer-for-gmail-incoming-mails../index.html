@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="Set receiving timer for Gmail incoming mails.. &middot; zachariasmanuel.com ">
+        <meta property="og:site_name" content="zachariasmanuel.com"/>
+        <meta property="og:description" content="Personal tech blog of Zacharias Manuel">
+        <meta property="og:url" content="http://www.parakulam.com/article/set-receiving-timer-for-gmail-incoming-mails../" />
+        <meta property="og:locale" content="en-us">
+        <meta name="author" content="Zacharias Manuel">
+        <meta name="description" content="Personal tech blog of Zacharias Manuel">
+        <meta name="keywords" content="zac,zacharias,zacharias manuel, android, tech head, startup village, kochi, fin robotics, neyya, android head, startup, kerala, android developer, hardware startup">
+        <meta name="generator" content="Hugo 0.15" />
+        <link rel="icon" href="http://www.parakulam.com/assets/favicon.ico" type="image/x-icon"> 
+        <link rel="stylesheet" href="http://www.parakulam.com/css/slender-base.css">
+        <link rel="stylesheet" href="http://www.parakulam.com/css/slender-color-schemes.css">
+        <link rel="stylesheet" href="http://www.parakulam.com/css/font-awesome-4.5.0.min.css">
+        <link rel="stylesheet" href="http://www.parakulam.com/css/highlight-9.0.0-default.min.css">
+        <title>
+            
+                Set receiving timer for Gmail incoming mails.. &middot; zachariasmanuel.com
+            
+        </title>
+    </head>
+    <body class="color-scheme-white">
+        <div class="container">
+            <header>
+                <nav>
+                    <ul><li><a href="http://www.parakulam.com/">home</a></li><li><a href="http://www.parakulam.com/about/">about</a></li></ul>
+                </nav>
+                
+                    <h1 class="post-title">Set receiving timer for Gmail incoming mails..</h1>
+                    <aside>
+                        <p>by <strong>Zacharias Manuel</strong> on <strong>Tue, Oct 14, 2014</strong></p>
+                    </aside>
+                
+            </header>
+
+<article class="article-content">
+    <p>Sometimes, receiving mails continuously can be such a pain. If you are facing this problem, and if you are a Gmail user, be happy to know that it is possible to adjust Gmail to let in the incoming mail at a specified time. You can pause the inbox to block the mails coming to your inbox.</p>
+
+<p>1. Go to your Gmail inbox, Go to Settings and go to the tab named &ldquo;labels&rdquo;.</p>
+
+<p>2. Under the labels tab, create a new label with the name &ldquo;For processing&rdquo;</p>
+
+<p><img src="/img/timer1.jpg" alt="timer1" /></p>
+
+<p>3. Go to the tab filters in Settings page and click on &ldquo;create a new filter&rdquo;.</p>
+
+<p>4. In this page enter &ldquo;*&rdquo; in the &ldquo;From&rdquo; text box; click on &ldquo;create filter with this search&rdquo; and confirm creating the filter.</p>
+
+<p><img src="/img/timer2.jpg" alt="timer2" /></p>
+
+<p>5. In this you have to mark &ldquo;Skip the inbox&rdquo; and &ldquo;Apply the label : .For processing&rdquo;. And click on &ldquo;Create filter&rdquo;.</p>
+
+<p><img src="/img/timer3.jpg" alt="timer3" /></p>
+
+<p>6. After completing this go to Google Drive, click on &ldquo;Create&rdquo; and then go to &ldquo;Script&rdquo;. If you are not able to find &ldquo;Script&rdquo; here, goto &ldquo;Connect more apps&rdquo;, search for &ldquo;script&rdquo; and connect with Google Drive. Then the option &ldquo;Script&rdquo; will appear on this list.</p>
+
+<p><img src="/img/timer4.jpg" alt="timer4" /></p>
+
+<p>7. It will lead to a page. Now select &lsquo;Blank Project&rsquo; from this page.</p>
+
+<p>8. After renaming the project remove the existing code and copy paste this code:</p>
+
+<pre><code>function moveToInbox() {    
+    var threadArray = GmailApp.getUserLabelByName(&quot;.For processing&quot;).getThreads();
+    // GmailApp.markThreadRead(threadArray);
+    GmailApp.moveThreadsToInbox(threadArray);
+    var label = GmailApp.getUserLabelByName(&quot;.For processing&quot;);  
+    for (var i=0; i&lt; threadArray.length; i++) { 
+        threadArray[i].markUnread();
+        threadArray[i].removeLabel(label);
+    }
+}
+</code></pre>
+
+<p>9. Before setting the timer we need to test the code. For that click on the &ldquo;Run&rdquo; button and confirm the authorization.</p>
+
+<p><img src="/img/timer5.jpg" alt="timer5" /></p>
+
+<p>10. If it shows an error, please check the code once again.</p>
+
+<p>11. After the successful run we need to set the timer to move mails from &ldquo;.For processing&rdquo; to Inbox. For that we need to set up a timer to run this code.</p>
+
+<p>For setting up the timer, click on Triggers button and &ldquo;Click here to add new trigger&rdquo;.</p>
+
+<p><img src="/img/timer6.jpg" alt="timer6" /></p>
+
+<p>12. If you want to get your mails on every morning please set the option according to the image and click on Save. You can go through the options available and customize the timer according to your needs.</p>
+
+<p><img src="/img/timer7.jpg" alt="timer7" /></p>
+
+<p>13. Now the emails will only come to your inbox on every day at 7am. If you have a urgency you can go to the label &lsquo;For Processing&rsquo; and all the pending mails would be there.</p>
+
+<p>GitHub link : <a href="https://github.com/zachariasmanuel/Move-to-Inbox-on-a-Schedule">Here</a></p>
+
+</article>
+        </div>
+        <footer>
+            <p>Copyright 2015 &copy; Zacharias Manuel</p>
+        </footer>
+        <script src="http://www.parakulam.com/js/highlight-9.0.0.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        
+        <script type="text/javascript">
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'your-google-analytics-tracking-code']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+        </script>
+        
+    </body>
+</html>
