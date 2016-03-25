@@ -1,6 +1,7 @@
 +++
 date = "2015-06-17T00:29:19+05:30"
 title = "Bulk Download Facebook Photos"
+tags = ["Facebook photo download" , "Bulk download"]
 
 +++
 
