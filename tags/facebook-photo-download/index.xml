@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Facebook Photo Download on zachariasmanuel.com</title>
-    <link>http://www.parakulam.com/tags/facebook-photo-download/</link>
+    <link>http://www.zachariasmanuel.com/tags/facebook-photo-download/</link>
     <description>Recent content in Facebook Photo Download on zachariasmanuel.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 17 Jun 2015 00:29:19 +0530</lastBuildDate>
-    <atom:link href="http://www.parakulam.com/tags/facebook-photo-download/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://www.zachariasmanuel.com/tags/facebook-photo-download/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Bulk Download Facebook Photos</title>
-      <link>http://www.parakulam.com/article/bulk-download-facebook-photos/</link>
+      <link>http://www.zachariasmanuel.com/article/bulk-download-facebook-photos/</link>
       <pubDate>Wed, 17 Jun 2015 00:29:19 +0530</pubDate>
       
-      <guid>http://www.parakulam.com/article/bulk-download-facebook-photos/</guid>
+      <guid>http://www.zachariasmanuel.com/article/bulk-download-facebook-photos/</guid>
       <description>&lt;p&gt;Occasionally we download a lot of photos from Facebook. Downloading photos is really simple too : Just right click the mouse and select save image as. But what if you want to download bulk images, like 50 or 100 (for instance, you are into this girl and you want to save all the best albums of your crush) ?  Will you select each and every pic and do the same process?&lt;/p&gt;
 
 &lt;p&gt;Some months back I faced the same problem when I wanted to download a hundred to two hundred photos from Facebook 😉 . I searched for tools and scripts and since I could not find any (either no one really faced that problem, or they were content with the present method), I ended up in writing a script. I completed the script in 1 hour and Yeah, it worked!&lt;/p&gt;
@@ -25,7 +25,7 @@
 
 &lt;p&gt;Launch Google Chrome, go to Facebook and open the album you want to download. Scroll down till all the thumbnails of the photos are loaded.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://www.parakulam.com/img/fb1.jpg&#34; alt=&#34;fb1&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://www.zachariasmanuel.com/img/fb1.jpg&#34; alt=&#34;fb1&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Step 2&lt;/strong&gt;&lt;/p&gt;
 
@@ -33,7 +33,7 @@
 
 &lt;p&gt;Google Chrome controls -&amp;gt; More Tools -&amp;gt; JavaScript Console&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://www.parakulam.com/img/fb5.jpg&#34; alt=&#34;fb5&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://www.zachariasmanuel.com/img/fb5.jpg&#34; alt=&#34;fb5&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Step 3&lt;/strong&gt;&lt;/p&gt;
 
@@ -62,19 +62,19 @@ for(var i=0;i&amp;lt;divs.length;i++)
 }
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://www.parakulam.com/img/fb2.jpg&#34; alt=&#34;fb2&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://www.zachariasmanuel.com/img/fb2.jpg&#34; alt=&#34;fb2&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Step 4&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;After copying the script, press Enter. You will get a question from Chrome to allow Facebook to download multiple images. Click on Allow.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://www.parakulam.com/img/fb3.jpg&#34; alt=&#34;fb3&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://www.zachariasmanuel.com/img/fb3.jpg&#34; alt=&#34;fb3&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Step 5&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;Now all you have to do is wait for all the images to download.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://www.parakulam.com/img/fb4.jpg&#34; alt=&#34;fb4&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://www.zachariasmanuel.com/img/fb4.jpg&#34; alt=&#34;fb4&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Oh, by the way, you can use this until Facebook discovers this and blocks it. :) :) :)&lt;/p&gt;
 </description>
