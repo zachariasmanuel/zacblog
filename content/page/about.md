@@ -5,5 +5,6 @@ keywords = []
 title = "about"
 
 +++
-This is sample content
+
+# <center> ORU PALAM ITTAL ANGOTTUM INGOTTUM VENDEDI MOLE.. </center>
 
