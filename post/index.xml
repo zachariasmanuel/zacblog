@@ -6,8 +6,67 @@
     <description>Recent content in Posts on zachariasmanuel.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 17 Jun 2015 00:29:19 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 13 Apr 2016 17:18:00 +0530</lastBuildDate>
     <atom:link href="http://www.zachariasmanuel.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Scan and copy all the music files in a directory</title>
+      <link>http://www.zachariasmanuel.com/article/scan-and-copy-all-the-music-files-in-a-directory/</link>
+      <pubDate>Wed, 13 Apr 2016 17:18:00 +0530</pubDate>
+      
+      <guid>http://www.zachariasmanuel.com/article/scan-and-copy-all-the-music-files-in-a-directory/</guid>
+      <description>&lt;p&gt;Hey guys! Wrting after a short break and hoping to keep it on from now on. So here&amp;rsquo;s the thing. I love listening to music and I had lots of different music in my mac&amp;rsquo;s music folder. I used to copy collections from my friends and add them to my music folder. And after a certain point, I started loosing track of what&amp;rsquo;s there. Because each folder would have subfolders. And I found multiple copies of the same music in different folders.&lt;/p&gt;
+
+&lt;p&gt;When loaded on a player, repetitions would occur a lot and this I didn&amp;rsquo;t want. I decided to solve the problem and started scanning each and every folder for music, manually. And tried to copy-paste them to one destination so that repetitions will be over written. After 5 to 10 mins I realised its not an easy task since each folder had sub folders and some of them again had further sub folders. So I ended up writing a python script for scanning all my music in the main folder and copying it to an external drive. Executed the script and voila!! Problem solved. Total music size came down to 7GB from 12GB.&lt;/p&gt;
+
+&lt;p&gt;If you are having the same problem and know a bit of tech, follow these steps to solve it.&lt;/p&gt;
+
+&lt;p&gt;1. Assuming you already have python installed in your system. If not, then install python from this link &lt;a href=&#34;https://www.python.org/downloads/&#34;&gt;https://www.python.org/downloads/&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;2. Copy the script given below and save to your computer. Put the file name as scan.py&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import fnmatch
+import os
+import sys
+import shutil
+
+FILE_TYPE = &#39;*.mp3&#39;
+
+try:
+	walk_dir = sys.argv[1]
+	dest_dir = sys.argv[2]
+	count = 0
+except IndexError:
+    print(&#39;Incorrect input&#39;)
+    print(&#39;Use this format - python [FILE NAME] [SCAN_DIRECTORY] [DESTINATION_DIRECTORY]&#39;)
+    print(&#39;Example - python scan.py /Users/zac/Music/ /Users/zac/Desktop/Output/&#39;)
+    exit()
+
+def copyFile(file_name, file_path, dest_dir):
+	global count
+	print(&#39;\t- Copying file %s (full path: %s)&#39; % (file_name, file_path))
+	shutil.copy2(file_path, os.path.join(dest_dir, filename))
+	count = count+1
+
+
+for root, dirnames, filenames in os.walk(walk_dir):
+    for filename in fnmatch.filter(filenames, FILE_TYPE):
+        copyFile(filename, os.path.join(root, filename), dest_dir)
+
+print(&#39;Copied &#39; +str(count)+ &#39; files&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;3. Navigate to that path in command line and execute the python file. Add the scanning folder location and destination folder location with the command&lt;/p&gt;
+
+&lt;p&gt;Format  : python [FILE NAME] [SCAN_DIRECTORY] [DESTINATION_DIRECTORY]
+Example : python scan.py /Users/zac/Music/ /Users/zac/Desktop/Output/&lt;/p&gt;
+
+&lt;p&gt;Note : You can use this code to scan any type of files. All you need to do is change the &amp;lsquo;FILE_TYPE = &amp;lsquo;*.mp3&amp;rdquo; part in the source code to any other extension you want.&lt;/p&gt;
+
+&lt;p&gt;Until next post!
+Cheers. :)&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Bulk Download Facebook Photos</title>
