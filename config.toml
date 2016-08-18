@@ -39,7 +39,7 @@ PaginatePath = "/"
 
     # Social links, must be full URLs (e.g. https://github.com/CrimsonRay/).
     # Remove, comment, or leave blank any field to leave them out.
-    email = "mailto:zac@zachariasmanuel.com"
+    email = "mailto:zach@zachariasmanuel.com"
     github = "https://github.com/zachariasmanuel"
     #bitbucket = "url-to-your-bitbucket"
     twitter = "https://twitter.com/zachmanuel90"
