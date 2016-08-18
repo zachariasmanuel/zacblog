@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="Scan and copy all the music files in a directory &middot; zachariasmanuel.com ">
+        <meta property="og:site_name" content="zachariasmanuel.com"/>
+        <meta property="og:description" content="Personal tech blog of Zacharias Manuel">
+        <meta property="og:url" content="http://www.zachariasmanuel.com/article/scan-and-copy-all-the-music-files-in-a-directory/" />
+        <meta property="og:locale" content="en-us">
+        <meta name="author" content="Zacharias Manuel">
+        <meta name="description" content="Personal tech blog of Zacharias Manuel">
+        <meta name="keywords" content="zac,zacharias,zacharias manuel, android, tech head, startup village, kochi, fin robotics, neyya, android head, startup, kerala, android developer, hardware startup">
+        <meta name="generator" content="Hugo 0.15" />
+        <link rel="icon" href="http://www.zachariasmanuel.com/assets/favicon.ico" type="image/x-icon"> 
+        <link rel="stylesheet" href="http://www.zachariasmanuel.com/css/slender-base.css">
+        <link rel="stylesheet" href="http://www.zachariasmanuel.com/css/slender-color-schemes.css">
+        <link rel="stylesheet" href="http://www.zachariasmanuel.com/css/font-awesome-4.5.0.min.css">
+        <link rel="stylesheet" href="http://www.zachariasmanuel.com/css/highlight-9.0.0-default.min.css">
+        <title>
+            
+                Scan and copy all the music files in a directory &middot; zachariasmanuel.com
+            
+        </title>
+    </head>
+    <body class="color-scheme-white">
+        <div class="container">
+            <header>
+                <nav>
+                    <ul><li><a href="http://www.zachariasmanuel.com/">home</a></li><li><a href="http://www.zachariasmanuel.com/about/">about</a></li></ul>
+                </nav>
+                
+                    <h1 class="post-title">Scan and copy all the music files in a directory</h1>
+                    <aside>
+                        <p>by <strong>Zacharias Manuel</strong> on <strong>Wed, Apr 13, 2016</strong></p>
+                    </aside>
+                
+            </header>
+
+<article class="article-content">
+    <p>Hey guys! Wrting after a short break and hoping to keep it on from now on. So here&rsquo;s the thing. I love listening to music and I had lots of different music in my mac&rsquo;s music folder. I used to copy collections from my friends and add them to my music folder. And after a certain point, I started loosing track of what&rsquo;s there. Because each folder would have subfolders. And I found multiple copies of the same music in different folders.</p>
+
+<p>When loaded on a player, repetitions would occur a lot and this I didn&rsquo;t want. I decided to solve the problem and started scanning each and every folder for music, manually. And tried to copy-paste them to one destination so that repetitions will be over written. After 5 to 10 mins I realised its not an easy task since each folder had sub folders and some of them again had further sub folders. So I ended up writing a python script for scanning all my music in the main folder and copying it to an external drive. Executed the script and voila!! Problem solved. Total music size came down to 7GB from 12GB.</p>
+
+<p>If you are having the same problem and know a bit of tech, follow these steps to solve it.</p>
+
+<p>1. Assuming you already have python installed in your system. If not, then install python from this link <a href="https://www.python.org/downloads/">https://www.python.org/downloads/</a>.</p>
+
+<p>2. Copy the script given below and save to your computer. Put the file name as scan.py</p>
+
+<pre><code class="language-python">import fnmatch
+import os
+import sys
+import shutil
+
+FILE_TYPE = '*.mp3'
+
+try:
+	walk_dir = sys.argv[1]
+	dest_dir = sys.argv[2]
+	count = 0
+except IndexError:
+    print('Incorrect input')
+    print('Use this format - python [FILE NAME] [SCAN_DIRECTORY] [DESTINATION_DIRECTORY]')
+    print('Example - python scan.py /Users/zac/Music/ /Users/zac/Desktop/Output/')
+    exit()
+
+def copyFile(file_name, file_path, dest_dir):
+	global count
+	print('\t- Copying file %s (full path: %s)' % (file_name, file_path))
+	shutil.copy2(file_path, os.path.join(dest_dir, filename))
+	count = count+1
+
+
+for root, dirnames, filenames in os.walk(walk_dir):
+    for filename in fnmatch.filter(filenames, FILE_TYPE):
+        copyFile(filename, os.path.join(root, filename), dest_dir)
+
+print('Copied ' +str(count)+ ' files')
+</code></pre>
+
+<p>3. Navigate to that path in command line and execute the python file. Add the scanning folder location and destination folder location with the command</p>
+
+<p>Format  : python [FILE NAME] [SCAN_DIRECTORY] [DESTINATION_DIRECTORY]
+Example : python scan.py /Users/zac/Music/ /Users/zac/Desktop/Output/</p>
+
+<p>Note : You can use this code to scan any type of files. All you need to do is change the &lsquo;FILE_TYPE = &lsquo;*.mp3&rdquo; part in the source code to any other extension you want.</p>
+
+<p>Until next post!
+Cheers. :)</p>
+
+</article>
+        </div>
+        <footer>
+            <p>Copyright 2015 &copy; Zacharias Manuel</p>
+        </footer>
+        <script src="http://www.zachariasmanuel.com/js/highlight-9.0.0.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        
+        <script type="text/javascript">
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-42601089-3']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+        </script>
+        
+    </body>
+</html>

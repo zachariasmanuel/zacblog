@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on zachariasmanuel.com</title>
+    <link>http://www.zachariasmanuel.com/post/</link>
+    <description>Recent content in Posts on zachariasmanuel.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 13 Apr 2016 17:18:00 +0530</lastBuildDate>
+    <atom:link href="http://www.zachariasmanuel.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Scan and copy all the music files in a directory</title>
+      <link>http://www.zachariasmanuel.com/article/scan-and-copy-all-the-music-files-in-a-directory/</link>
+      <pubDate>Wed, 13 Apr 2016 17:18:00 +0530</pubDate>
+      
+      <guid>http://www.zachariasmanuel.com/article/scan-and-copy-all-the-music-files-in-a-directory/</guid>
+      <description>&lt;p&gt;Hey guys! Wrting after a short break and hoping to keep it on from now on. So here&amp;rsquo;s the thing. I love listening to music and I had lots of different music in my mac&amp;rsquo;s music folder. I used to copy collections from my friends and add them to my music folder. And after a certain point, I started loosing track of what&amp;rsquo;s there. Because each folder would have subfolders. And I found multiple copies of the same music in different folders.&lt;/p&gt;
+
+&lt;p&gt;When loaded on a player, repetitions would occur a lot and this I didn&amp;rsquo;t want. I decided to solve the problem and started scanning each and every folder for music, manually. And tried to copy-paste them to one destination so that repetitions will be over written. After 5 to 10 mins I realised its not an easy task since each folder had sub folders and some of them again had further sub folders. So I ended up writing a python script for scanning all my music in the main folder and copying it to an external drive. Executed the script and voila!! Problem solved. Total music size came down to 7GB from 12GB.&lt;/p&gt;
+
+&lt;p&gt;If you are having the same problem and know a bit of tech, follow these steps to solve it.&lt;/p&gt;
+
+&lt;p&gt;1. Assuming you already have python installed in your system. If not, then install python from this link &lt;a href=&#34;https://www.python.org/downloads/&#34;&gt;https://www.python.org/downloads/&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;2. Copy the script given below and save to your computer. Put the file name as scan.py&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;import fnmatch
+import os
+import sys
+import shutil
+
+FILE_TYPE = &#39;*.mp3&#39;
+
+try:
+	walk_dir = sys.argv[1]
+	dest_dir = sys.argv[2]
+	count = 0
+except IndexError:
+    print(&#39;Incorrect input&#39;)
+    print(&#39;Use this format - python [FILE NAME] [SCAN_DIRECTORY] [DESTINATION_DIRECTORY]&#39;)
+    print(&#39;Example - python scan.py /Users/zac/Music/ /Users/zac/Desktop/Output/&#39;)
+    exit()
+
+def copyFile(file_name, file_path, dest_dir):
+	global count
+	print(&#39;\t- Copying file %s (full path: %s)&#39; % (file_name, file_path))
+	shutil.copy2(file_path, os.path.join(dest_dir, filename))
+	count = count+1
+
+
+for root, dirnames, filenames in os.walk(walk_dir):
+    for filename in fnmatch.filter(filenames, FILE_TYPE):
+        copyFile(filename, os.path.join(root, filename), dest_dir)
+
+print(&#39;Copied &#39; +str(count)+ &#39; files&#39;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;3. Navigate to that path in command line and execute the python file. Add the scanning folder location and destination folder location with the command&lt;/p&gt;
+
+&lt;p&gt;Format  : python [FILE NAME] [SCAN_DIRECTORY] [DESTINATION_DIRECTORY]
+Example : python scan.py /Users/zac/Music/ /Users/zac/Desktop/Output/&lt;/p&gt;
+
+&lt;p&gt;Note : You can use this code to scan any type of files. All you need to do is change the &amp;lsquo;FILE_TYPE = &amp;lsquo;*.mp3&amp;rdquo; part in the source code to any other extension you want.&lt;/p&gt;
+
+&lt;p&gt;Until next post!
+Cheers. :)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Bulk Download Facebook Photos</title>
+      <link>http://www.zachariasmanuel.com/article/bulk-download-facebook-photos/</link>
+      <pubDate>Wed, 17 Jun 2015 00:29:19 +0530</pubDate>
+      
+      <guid>http://www.zachariasmanuel.com/article/bulk-download-facebook-photos/</guid>
+      <description>&lt;p&gt;Occasionally we download a lot of photos from Facebook. Downloading photos is really simple too : Just right click the mouse and select save image as. But what if you want to download bulk images, like 50 or 100 (for instance, you are into this girl and you want to save all the best albums of your crush) ?  Will you select each and every pic and do the same process?&lt;/p&gt;
+
+&lt;p&gt;Some months back I faced the same problem when I wanted to download a hundred to two hundred photos from Facebook 😉 . I searched for tools and scripts and since I could not find any (either no one really faced that problem, or they were content with the present method), I ended up in writing a script. I completed the script in 1 hour and Yeah, it worked!&lt;/p&gt;
+
+&lt;p&gt;If you are curious enough or if you have the same problem, please follow the given steps.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 1&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Launch Google Chrome, go to Facebook and open the album you want to download. Scroll down till all the thumbnails of the photos are loaded.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.zachariasmanuel.com/img/fb1.jpg&#34; alt=&#34;fb1&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 2&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Go to JavaScript console by:&lt;/p&gt;
+
+&lt;p&gt;Google Chrome controls -&amp;gt; More Tools -&amp;gt; JavaScript Console&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.zachariasmanuel.com/img/fb5.jpg&#34; alt=&#34;fb5&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 3&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Chrome will warn you about hacking. Dont worry, I am not gonna hack anyone&amp;rsquo;s account.:) Please copy paste the script into the console.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;var divs = document.getElementsByClassName(&#39;_53s&#39;);
+for(var i=0;i&amp;lt;divs.length;i++)
+{
+  console.log(divs[i].getAttribute(&amp;quot;data-starred-src&amp;quot;));
+  var save = document.createElement(&#39;a&#39;);
+  save.href = divs[i].getAttribute(&amp;quot;data-starred-src&amp;quot;);
+  save.target = &#39;_blank&#39;;
+  save.download = &#39;Image &#39;+i+&#39;.jpg&#39;;
+ 
+  var event = document.createEvent(&#39;Event&#39;);
+  event.initEvent(&#39;click&#39;, true, true);
+  save.dispatchEvent(event);
+  (window.URL || window.webkitURL).revokeObjectURL(save.href);
+ 
+  (function myLoop (i) {          
+  setTimeout(function () {
+     if (--i) myLoop(i);      
+  }, 3000)
+})(10);    
+ 
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.zachariasmanuel.com/img/fb2.jpg&#34; alt=&#34;fb2&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 4&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;After copying the script, press Enter. You will get a question from Chrome to allow Facebook to download multiple images. Click on Allow.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.zachariasmanuel.com/img/fb3.jpg&#34; alt=&#34;fb3&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 5&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Now all you have to do is wait for all the images to download.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.zachariasmanuel.com/img/fb4.jpg&#34; alt=&#34;fb4&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Oh, by the way, you can use this until Facebook discovers this and blocks it. :) :) :)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Set receiving timer for Gmail incoming mails..</title>
+      <link>http://www.zachariasmanuel.com/article/set-receiving-timer-for-gmail-incoming-mails../</link>
+      <pubDate>Tue, 14 Oct 2014 00:29:19 +0530</pubDate>
+      
+      <guid>http://www.zachariasmanuel.com/article/set-receiving-timer-for-gmail-incoming-mails../</guid>
+      <description>&lt;p&gt;Sometimes, receiving mails continuously can be such a pain. If you are facing this problem, and if you are a Gmail user, be happy to know that it is possible to adjust Gmail to let in the incoming mail at a specified time. You can pause the inbox to block the mails coming to your inbox.&lt;/p&gt;
+
+&lt;p&gt;1. Go to your Gmail inbox, Go to Settings and go to the tab named &amp;ldquo;labels&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;2. Under the labels tab, create a new label with the name &amp;ldquo;For processing&amp;rdquo;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.zachariasmanuel.com/img/timer1.jpg&#34; alt=&#34;timer1&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;3. Go to the tab filters in Settings page and click on &amp;ldquo;create a new filter&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;4. In this page enter &amp;ldquo;*&amp;rdquo; in the &amp;ldquo;From&amp;rdquo; text box; click on &amp;ldquo;create filter with this search&amp;rdquo; and confirm creating the filter.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.zachariasmanuel.com/img/timer2.jpg&#34; alt=&#34;timer2&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;5. In this you have to mark &amp;ldquo;Skip the inbox&amp;rdquo; and &amp;ldquo;Apply the label : .For processing&amp;rdquo;. And click on &amp;ldquo;Create filter&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.zachariasmanuel.com/img/timer3.jpg&#34; alt=&#34;timer3&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;6. After completing this go to Google Drive, click on &amp;ldquo;Create&amp;rdquo; and then go to &amp;ldquo;Script&amp;rdquo;. If you are not able to find &amp;ldquo;Script&amp;rdquo; here, goto &amp;ldquo;Connect more apps&amp;rdquo;, search for &amp;ldquo;script&amp;rdquo; and connect with Google Drive. Then the option &amp;ldquo;Script&amp;rdquo; will appear on this list.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.zachariasmanuel.com/img/timer4.jpg&#34; alt=&#34;timer4&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;7. It will lead to a page. Now select &amp;lsquo;Blank Project&amp;rsquo; from this page.&lt;/p&gt;
+
+&lt;p&gt;8. After renaming the project remove the existing code and copy paste this code:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;function moveToInbox() {    
+    var threadArray = GmailApp.getUserLabelByName(&amp;quot;.For processing&amp;quot;).getThreads();
+    // GmailApp.markThreadRead(threadArray);
+    GmailApp.moveThreadsToInbox(threadArray);
+    var label = GmailApp.getUserLabelByName(&amp;quot;.For processing&amp;quot;);  
+    for (var i=0; i&amp;lt; threadArray.length; i++) { 
+        threadArray[i].markUnread();
+        threadArray[i].removeLabel(label);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;9. Before setting the timer we need to test the code. For that click on the &amp;ldquo;Run&amp;rdquo; button and confirm the authorization.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.zachariasmanuel.com/img/timer5.jpg&#34; alt=&#34;timer5&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;10. If it shows an error, please check the code once again.&lt;/p&gt;
+
+&lt;p&gt;11. After the successful run we need to set the timer to move mails from &amp;ldquo;.For processing&amp;rdquo; to Inbox. For that we need to set up a timer to run this code.&lt;/p&gt;
+
+&lt;p&gt;For setting up the timer, click on Triggers button and &amp;ldquo;Click here to add new trigger&amp;rdquo;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.zachariasmanuel.com/img/timer6.jpg&#34; alt=&#34;timer6&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;12. If you want to get your mails on every morning please set the option according to the image and click on Save. You can go through the options available and customize the timer according to your needs.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.zachariasmanuel.com/img/timer7.jpg&#34; alt=&#34;timer7&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;13. Now the emails will only come to your inbox on every day at 7am. If you have a urgency you can go to the label &amp;lsquo;For Processing&amp;rsquo; and all the pending mails would be there.&lt;/p&gt;
+
+&lt;p&gt;GitHub link : &lt;a href=&#34;https://github.com/zachariasmanuel/Move-to-Inbox-on-a-Schedule&#34;&gt;Here&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Install .bar file on BB10 devices</title>
+      <link>http://www.zachariasmanuel.com/article/install-.bar-file-on-bb10-devices/</link>
+      <pubDate>Sat, 04 Oct 2014 00:29:19 +0530</pubDate>
+      
+      <guid>http://www.zachariasmanuel.com/article/install-.bar-file-on-bb10-devices/</guid>
+      <description>&lt;p&gt;Please follow the steps for installing .bar file into BB10 devices using Chrome.&lt;/p&gt;
+
+&lt;p&gt;1. Go to the chrome web store, search for BB10 app manager and add the extension to your chrome.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.zachariasmanuel.com/img/bb1.jpg&#34; alt=&#34;BB1&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;2. Connect BB10 device to your computer using USB cable. And turn on the development mode on your phone. Enter the device password to enable development mode. If you have no password for the device it will ask to create new password. You can disable this password from Security and Privacy settings later.&lt;/p&gt;
+
+&lt;p&gt;Settings -&amp;gt; Security and Privacy -&amp;gt; Development Mode&lt;/p&gt;
+
+&lt;p&gt;Please note the IP address on the screen. Here the IP address is 169.254.0.1&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.zachariasmanuel.com/img/bb3.jpg&#34; alt=&#34;bb3&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;3. Click on the BB10 extension added to Chrome.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.zachariasmanuel.com/img/bb2.jpg&#34; alt=&#34;bb2&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;4. You will get a screen like this. You have to enter the noted IP address in the box and click save. Then the same IP address will be shown as a link at the bottom. Click on that as well.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.zachariasmanuel.com/img/bb5.jpg&#34; alt=&#34;bb5&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;5. Then Chrome will show a security warning for the connection. Please proceed this.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.zachariasmanuel.com/img/bb6.jpg&#34; alt=&#34;bb6&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;6. In this screen you have to enter the device password and click login.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://www.zachariasmanuel.com/img/bb4.jpg&#34; alt=&#34;bb4&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;7. You have established the connection and you will get a screen with all apps listed. You can install, uninstall and launch any apps from this screen. For installing apps click on the Install Apps button at the top right. Select the .bar file in your system and proceed. The app will be installed into your BB10 device.&lt;br /&gt;
+&lt;img src=&#34;http://www.zachariasmanuel.com/img/bb7.jpg&#34; alt=&#34;BB7&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

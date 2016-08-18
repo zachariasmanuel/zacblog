@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="Bulk Download Facebook Photos &middot; zachariasmanuel.com ">
+        <meta property="og:site_name" content="zachariasmanuel.com"/>
+        <meta property="og:description" content="Personal tech blog of Zacharias Manuel">
+        <meta property="og:url" content="http://www.zachariasmanuel.com/article/bulk-download-facebook-photos/" />
+        <meta property="og:locale" content="en-us">
+        <meta name="author" content="Zacharias Manuel">
+        <meta name="description" content="Personal tech blog of Zacharias Manuel">
+        <meta name="keywords" content="zac,zacharias,zacharias manuel, android, tech head, startup village, kochi, fin robotics, neyya, android head, startup, kerala, android developer, hardware startup">
+        <meta name="generator" content="Hugo 0.15" />
+        <link rel="icon" href="http://www.zachariasmanuel.com/assets/favicon.ico" type="image/x-icon"> 
+        <link rel="stylesheet" href="http://www.zachariasmanuel.com/css/slender-base.css">
+        <link rel="stylesheet" href="http://www.zachariasmanuel.com/css/slender-color-schemes.css">
+        <link rel="stylesheet" href="http://www.zachariasmanuel.com/css/font-awesome-4.5.0.min.css">
+        <link rel="stylesheet" href="http://www.zachariasmanuel.com/css/highlight-9.0.0-default.min.css">
+        <title>
+            
+                Bulk Download Facebook Photos &middot; zachariasmanuel.com
+            
+        </title>
+    </head>
+    <body class="color-scheme-white">
+        <div class="container">
+            <header>
+                <nav>
+                    <ul><li><a href="http://www.zachariasmanuel.com/">home</a></li><li><a href="http://www.zachariasmanuel.com/about/">about</a></li></ul>
+                </nav>
+                
+                    <h1 class="post-title">Bulk Download Facebook Photos</h1>
+                    <aside>
+                        <p>by <strong>Zacharias Manuel</strong> on <strong>Wed, Jun 17, 2015</strong></p>
+                    </aside>
+                
+            </header>
+
+<article class="article-content">
+    <p>Occasionally we download a lot of photos from Facebook. Downloading photos is really simple too : Just right click the mouse and select save image as. But what if you want to download bulk images, like 50 or 100 (for instance, you are into this girl and you want to save all the best albums of your crush) ?  Will you select each and every pic and do the same process?</p>
+
+<p>Some months back I faced the same problem when I wanted to download a hundred to two hundred photos from Facebook 😉 . I searched for tools and scripts and since I could not find any (either no one really faced that problem, or they were content with the present method), I ended up in writing a script. I completed the script in 1 hour and Yeah, it worked!</p>
+
+<p>If you are curious enough or if you have the same problem, please follow the given steps.</p>
+
+<p><strong>Step 1</strong></p>
+
+<p>Launch Google Chrome, go to Facebook and open the album you want to download. Scroll down till all the thumbnails of the photos are loaded.</p>
+
+<p><img src="/img/fb1.jpg" alt="fb1" /></p>
+
+<p><strong>Step 2</strong></p>
+
+<p>Go to JavaScript console by:</p>
+
+<p>Google Chrome controls -&gt; More Tools -&gt; JavaScript Console</p>
+
+<p><img src="/img/fb5.jpg" alt="fb5" /></p>
+
+<p><strong>Step 3</strong></p>
+
+<p>Chrome will warn you about hacking. Dont worry, I am not gonna hack anyone&rsquo;s account.:) Please copy paste the script into the console.</p>
+
+<pre><code class="language-javascript">var divs = document.getElementsByClassName('_53s');
+for(var i=0;i&lt;divs.length;i++)
+{
+  console.log(divs[i].getAttribute(&quot;data-starred-src&quot;));
+  var save = document.createElement('a');
+  save.href = divs[i].getAttribute(&quot;data-starred-src&quot;);
+  save.target = '_blank';
+  save.download = 'Image '+i+'.jpg';
+ 
+  var event = document.createEvent('Event');
+  event.initEvent('click', true, true);
+  save.dispatchEvent(event);
+  (window.URL || window.webkitURL).revokeObjectURL(save.href);
+ 
+  (function myLoop (i) {          
+  setTimeout(function () {
+     if (--i) myLoop(i);      
+  }, 3000)
+})(10);    
+ 
+}
+</code></pre>
+
+<p><img src="/img/fb2.jpg" alt="fb2" /></p>
+
+<p><strong>Step 4</strong></p>
+
+<p>After copying the script, press Enter. You will get a question from Chrome to allow Facebook to download multiple images. Click on Allow.</p>
+
+<p><img src="/img/fb3.jpg" alt="fb3" /></p>
+
+<p><strong>Step 5</strong></p>
+
+<p>Now all you have to do is wait for all the images to download.</p>
+
+<p><img src="/img/fb4.jpg" alt="fb4" /></p>
+
+<p>Oh, by the way, you can use this until Facebook discovers this and blocks it. :) :) :)</p>
+
+</article>
+        </div>
+        <footer>
+            <p>Copyright 2015 &copy; Zacharias Manuel</p>
+        </footer>
+        <script src="http://www.zachariasmanuel.com/js/highlight-9.0.0.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        
+        <script type="text/javascript">
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-42601089-3']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+        </script>
+        
+    </body>
+</html>
