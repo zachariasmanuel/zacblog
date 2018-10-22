@@ -2,36 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pages on zachariasmanuel.com</title>
-    <link>http://www.zachariasmanuel.com/page/</link>
+    <link>https://www.zachariasmanuel.com/page/</link>
     <description>Recent content in Pages on zachariasmanuel.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 23 Mar 2016 16:10:41 +0530</lastBuildDate>
-    <atom:link href="http://www.zachariasmanuel.com/page/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://www.zachariasmanuel.com/page/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>about</title>
-      <link>http://www.zachariasmanuel.com/about/</link>
+      <link>https://www.zachariasmanuel.com/about/</link>
       <pubDate>Wed, 23 Mar 2016 16:10:41 +0530</pubDate>
       
-      <guid>http://www.zachariasmanuel.com/about/</guid>
-      <description>
-
-&lt;h1 id=&#34;now:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;NOW&lt;/h1&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Android Head at Fin Robotics&lt;/li&gt;
-&lt;li&gt;Elite Member at BlackBerry&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&#34;was:6083a88ee3411b0d17ce02d738f69d47&#34;&gt;WAS&lt;/h1&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Technical Head at Startup Village&lt;/li&gt;
-&lt;li&gt;Manager at Google Developer Group Cochin&lt;/li&gt;
-&lt;li&gt;Android Developer at FeatherSoft&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+      <guid>https://www.zachariasmanuel.com/about/</guid>
+      <description> NOW  Android Head at Fin Robotics Elite Member at BlackBerry  WAS  Technical Head at Startup Village Manager at Google Developer Group Cochin Android Developer at FeatherSoft  </description>
     </item>
     
   </channel>

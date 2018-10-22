@@ -1,4 +1,4 @@
-baseurl = "http://www.zachariasmanuel.com"
+baseurl = "https://www.zachariasmanuel.com"
 languageCode = "en-us"
 title = "zachariasmanuel.com"
 MetaDataFormat = "toml"
