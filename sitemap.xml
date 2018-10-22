@@ -1,35 +1,71 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://www.zachariasmanuel.com/</loc>
+    <loc>https://www.zachariasmanuel.com/article/scan-and-copy-all-the-music-files-in-a-directory/</loc>
+    <lastmod>2016-04-13T17:18:00+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.zachariasmanuel.com/about/</loc>
+    <lastmod>2016-03-23T16:10:41+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.zachariasmanuel.com/article/bulk-download-facebook-photos/</loc>
+    <lastmod>2015-06-17T00:29:19+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.zachariasmanuel.com/article/set-receiving-timer-for-gmail-incoming-mails../</loc>
+    <lastmod>2014-10-14T00:29:19+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.zachariasmanuel.com/article/install-.bar-file-on-bb10-devices/</loc>
+    <lastmod>2014-10-04T00:29:19+05:30</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.zachariasmanuel.com/tags/bulk-download/</loc>
+    <lastmod>2015-06-17T00:29:19+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.zachariasmanuel.com/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.zachariasmanuel.com/tags/facebook-photo-download/</loc>
+    <lastmod>2015-06-17T00:29:19+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.zachariasmanuel.com/page/</loc>
+    <lastmod>2016-03-23T16:10:41+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.zachariasmanuel.com/post/</loc>
     <lastmod>2016-04-13T17:18:00+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.zachariasmanuel.com/article/scan-and-copy-all-the-music-files-in-a-directory/</loc>
-    <lastmod>2016-04-13T17:18:00+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.zachariasmanuel.com/about/</loc>
-    <lastmod>2016-03-23T16:10:41+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.zachariasmanuel.com/article/bulk-download-facebook-photos/</loc>
+    <loc>https://www.zachariasmanuel.com/tags/</loc>
     <lastmod>2015-06-17T00:29:19+05:30</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://www.zachariasmanuel.com/article/set-receiving-timer-for-gmail-incoming-mails../</loc>
-    <lastmod>2014-10-14T00:29:19+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.zachariasmanuel.com/article/install-.bar-file-on-bb10-devices/</loc>
-    <lastmod>2014-10-04T00:29:19+05:30</lastmod>
+    <loc>https://www.zachariasmanuel.com/</loc>
+    <lastmod>2016-04-13T17:18:00+05:30</lastmod>
+    <priority>0</priority>
   </url>
   
 </urlset>
