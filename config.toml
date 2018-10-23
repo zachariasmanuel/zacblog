@@ -21,13 +21,13 @@ PaginatePath = "/"
 
     # Change the color scheme of Slender.
     # See above for preview and list of color schemes.
-    colorscheme = "white"
+    colorscheme = "blue"
 
     # Tagline; HTML accepted here. Keep it concise.
     tagline = "</br>"
 
     # Footer; Markdown accepted here.
-    footer = "Copyright 2015 &copy; Zacharias Manuel"
+    footer = "Copyright 2018 &copy; Zacharias Manuel"
 
     # Description and keywords for <meta> tags.
     # Remember to set this for your main page.
