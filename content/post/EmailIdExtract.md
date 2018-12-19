@@ -1,7 +1,7 @@
 +++
 date = "2018-12-19T11:30:00+05:30"
 title = "Extract email IDs from Gmail"
-
+tags = ["Email id extract" , "Gmail", "Email extract", "Google app script", "Google script", "Email scanner", "scan email", "zac"]
 +++
 
 
