@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.zachariasmanuel.com/article/extract-email-ids-from-gmail/</loc>
+    <lastmod>2018-12-19T11:30:00+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.zachariasmanuel.com/article/scan-and-copy-all-the-music-files-in-a-directory/</loc>
     <lastmod>2016-04-13T17:18:00+05:30</lastmod>
   </url>
@@ -52,7 +57,7 @@
   
   <url>
     <loc>https://www.zachariasmanuel.com/post/</loc>
-    <lastmod>2016-04-13T17:18:00+05:30</lastmod>
+    <lastmod>2018-12-19T11:30:00+05:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -64,7 +69,7 @@
   
   <url>
     <loc>https://www.zachariasmanuel.com/</loc>
-    <lastmod>2016-04-13T17:18:00+05:30</lastmod>
+    <lastmod>2018-12-19T11:30:00+05:30</lastmod>
     <priority>0</priority>
   </url>
   
