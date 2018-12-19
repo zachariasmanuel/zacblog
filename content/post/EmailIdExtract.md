@@ -97,7 +97,7 @@ function extractEmails(threads) {
 ![EE1](/img/email_extract_1.png)
 
 
-5\. To scan your entire inbox, click on 'Extract emails from inbox' (from the new menu item) and wait for a few minutes. The response time depends on the number of emails in your inbox. This will fetch you the scan result into your spreadsheet. 
+5\. To scan your entire inbox, click on 'Extract emails from inbox' (from the new menu item) and wait for a few minutes (Authorize the code to run for the first time). The response time depends on the number of emails in your inbox. This will fetch you the scan result into your spreadsheet. 
 
 6\. You can also scan a label for email IDs. For this, enter the name of the label that you want to scan in the cell 'A1'. Click on 'Extract emails from label'. This scans all the emails marked in that label and extracts the email IDs to the spreadsheet.
 
