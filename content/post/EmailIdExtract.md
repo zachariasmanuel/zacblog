@@ -5,7 +5,6 @@ title = "Extract email IDs from Gmail"
 +++
 
 
-
 Hey people! Writing after a long time. Today I will explain how to scan your Gmail and extract all email IDs to a Google spreadsheet using Google apps script.
 
 1\. Go to google drive, create a new spreadsheet and give it a name.
