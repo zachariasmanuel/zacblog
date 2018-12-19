@@ -6,10 +6,22 @@
     <description>Recent content on zachariasmanuel.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 13 Apr 2016 17:18:00 +0530</lastBuildDate>
+    <lastBuildDate>Wed, 19 Dec 2018 11:30:00 +0530</lastBuildDate>
     
 	<atom:link href="https://www.zachariasmanuel.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Extract email IDs from Gmail</title>
+      <link>https://www.zachariasmanuel.com/article/extract-email-ids-from-gmail/</link>
+      <pubDate>Wed, 19 Dec 2018 11:30:00 +0530</pubDate>
+      
+      <guid>https://www.zachariasmanuel.com/article/extract-email-ids-from-gmail/</guid>
+      <description>Hey people! Writing after a long time. Today I will explain how to scan your Gmail and extract all email IDs to a Google spreadsheet using Google apps script.
+1. Go to google drive, create a new spreadsheet and give it a name.
+2. Open the script editor. Tools -&amp;gt; Script Editor
+3. Copy and paste the below code to the script editor and save the script with a name.</description>
+    </item>
     
     <item>
       <title>Scan and copy all the music files in a directory</title>

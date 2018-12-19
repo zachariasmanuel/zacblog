@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta property="og:title" content="Extract email IDs from Gmail &middot; zachariasmanuel.com ">
+        <meta property="og:site_name" content="zachariasmanuel.com"/>
+        <meta property="og:description" content="Personal tech blog of Zacharias Manuel">
+        <meta property="og:url" content="https://www.zachariasmanuel.com/article/extract-email-ids-from-gmail/" />
+        <meta property="og:locale" content="en-us">
+        <meta name="author" content="Zacharias Manuel">
+        <meta name="description" content="Personal tech blog of Zacharias Manuel">
+        <meta name="keywords" content="zac,zacharias,zacharias manuel, android, tech head, startup village, kochi, fin robotics, neyya, android head, startup, kerala, android developer, hardware startup">
+        <meta name="generator" content="Hugo 0.49.2" />
+        <link rel="icon" href="https://www.zachariasmanuel.com/assets/favicon.ico" type="image/x-icon"> 
+        <link rel="stylesheet" href="https://www.zachariasmanuel.com/css/slender-base.css">
+        <link rel="stylesheet" href="https://www.zachariasmanuel.com/css/slender-color-schemes.css">
+        <link rel="stylesheet" href="https://www.zachariasmanuel.com/css/font-awesome-4.5.0.min.css">
+        <link rel="stylesheet" href="https://www.zachariasmanuel.com/css/highlight-9.0.0-default.min.css">
+        <title>
+            
+                Extract email IDs from Gmail &middot; zachariasmanuel.com
+            
+        </title>
+    </head>
+    <body class="color-scheme-blue">
+        <div class="container">
+            <header>
+                <nav>
+                    <ul><li><a href="https://www.zachariasmanuel.com/">home</a></li></ul>
+                </nav>
+                
+                    <h1 class="post-title">Extract email IDs from Gmail</h1>
+                    <aside>
+                        <p>by <strong>Zacharias Manuel</strong> on <strong>Wed, Dec 19, 2018</strong></p>
+                    </aside>
+                
+            </header>
+
+<article class="article-content">
+    <p>Hey people! Writing after a long time. Today I will explain how to scan your Gmail and extract all email IDs to a Google spreadsheet using Google apps script.</p>
+
+<p>1. Go to google drive, create a new spreadsheet and give it a name.</p>
+
+<p>2. Open the script editor. Tools -&gt; Script Editor</p>
+
+<p>3. Copy and paste the below code to the script editor and save the script with a name.</p>
+
+<pre><code class="language-javascript">var ss = SpreadsheetApp.getActiveSpreadsheet();
+var sheet = ss.getActiveSheet();
+
+// add menu to Sheet
+function onOpen() {
+    var ui = SpreadsheetApp.getUi();
+    ui.createMenu('Extract Emails')
+        .addItem('Extract emails from inbox', 'extractEmailFromInbox')
+        .addItem('Extract emails from label', 'extarctEmailFromLablel')
+        .addToUi();
+}
+
+function extractEmailFromInbox(){
+  var threads = GmailApp.getInboxThreads();
+  extractEmails(threads);
+}
+
+function extarctEmailFromLablel(){
+  var label = sheet.getRange(1, 1).getValue();
+  var threads = GmailApp.search (&quot;label:&quot; + label);
+  extractEmails(threads);
+}
+
+function extractEmails(threads) {
+    var messages = GmailApp.getMessagesForThreads(threads);
+    var emailArray = [];
+
+    // get array of email addresses
+    messages.forEach(function(message) {
+        message.forEach(function(d) {
+            emailArray.push(d.getFrom());
+        });
+    });
+
+    // de-duplicate the array
+    var uniqueEmailArray = emailArray.filter(function(item, pos) {
+        return emailArray.indexOf(item) == pos;
+    });
+
+    //Clean email to seperate email and name
+    var cleanedEmailArray = uniqueEmailArray.map(function(el) {
+        var name = &quot;&quot;;
+        var email = &quot;&quot;;
+        var matches = el.match(/\s*&quot;?([^&quot;]*)&quot;?\s+&lt;(.+)&gt;/);
+
+        if (matches) {
+            name = matches[1];
+            email = matches[2];
+        } else {
+            name = &quot;N/k&quot;;
+            email = el;
+        }
+        return [name, email];
+    }).filter(function(d) {
+        if (
+            d[1] !== &quot;zac@zachariasmanuel.com&quot; &amp;&amp;
+            d[1] !== &quot;drive-shares-noreply@google.com&quot; &amp;&amp;
+            d[1] !== &quot;mailer-daemon@googlemail.com&quot;
+        ) {
+            return d;
+        }
+    });
+
+    //Show alert if there is no email
+    if (cleanedEmailArray.length == 0) {
+        var ui = SpreadsheetApp.getUi();
+        var result = ui.alert(
+            'Alert!',
+            'There is no email.',
+            ui.ButtonSet.OK);
+    } else {
+        sheet.getRange(3, 1, cleanedEmailArray.length, 2).setValues(cleanedEmailArray).sort(2);
+    }
+}
+</code></pre>
+
+<p><img src="/img/email_extract_2.png" alt="EE2" /></p>
+
+<p>4. Return to the spreadsheet, refresh it and a new menu item will appear on top of the spreadsheet as shown in the image below.</p>
+
+<p><img src="/img/email_extract_1.png" alt="EE1" /></p>
+
+<p>5. To scan your entire inbox, click on &lsquo;Extract emails from inbox&rsquo; (from the new menu item) and wait for a few minutes. The response time depends on the number of emails in your inbox. This will fetch you the scan result into your spreadsheet.</p>
+
+<p>6. You can also scan a label for email IDs. For this, enter the name of the label that you want to scan in the cell &lsquo;A1&rsquo;. Click on &lsquo;Extract emails from label&rsquo;. This scans all the emails marked in that label and extracts the email IDs to the spreadsheet.</p>
+
+<p>Find the github repository <a href="https://github.com/zachariasmanuel/EmailIdExtractor">here</a>. Your contributions are welcome.</p>
+
+<p>You can also mark your issues <a href="https://github.com/zachariasmanuel/EmailIdExtractor/issues">here</a>.</p>
+
+<p>✌️</p>
+
+</article>
+        </div>
+        <footer>
+            <p>Copyright 2018 &copy; Zacharias Manuel</p>
+        </footer>
+        <script src="https://www.zachariasmanuel.com/js/highlight-9.0.0.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        
+        <script type="text/javascript">
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-42601089-3']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+        </script>
+        
+    </body>
+</html>
