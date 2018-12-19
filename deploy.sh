@@ -17,6 +17,6 @@ git commit -m "$msg"
 
 # Push source and build repos.
 git push -f origin master
-git subtree push -f --prefix=public git@github.com:zachariasmanuel/zacblog.git gh-pages 
+git subtree push --prefix=public git@github.com:zachariasmanuel/zacblog.git gh-pages 
 
 echo -e "\033[0;32mDone..\033[0m"
