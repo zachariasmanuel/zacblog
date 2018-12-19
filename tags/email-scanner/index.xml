@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Email Scanner on zachariasmanuel.com</title>
+    <link>https://www.zachariasmanuel.com/tags/email-scanner/</link>
+    <description>Recent content in Email Scanner on zachariasmanuel.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 19 Dec 2018 11:30:00 +0530</lastBuildDate>
+    
+	<atom:link href="https://www.zachariasmanuel.com/tags/email-scanner/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Extract email IDs from Gmail</title>
+      <link>https://www.zachariasmanuel.com/article/extract-email-ids-from-gmail/</link>
+      <pubDate>Wed, 19 Dec 2018 11:30:00 +0530</pubDate>
+      
+      <guid>https://www.zachariasmanuel.com/article/extract-email-ids-from-gmail/</guid>
+      <description>Hey people! Writing after a long time. Today I will explain how to scan your Gmail and extract all email IDs to a Google spreadsheet using Google apps script.
+1. Go to google drive, create a new spreadsheet and give it a name.
+2. Open the script editor. Tools -&amp;gt; Script Editor
+3. Copy and paste the below code to the script editor and save the script with a name.</description>
+    </item>
+    
+  </channel>
+</rss>
