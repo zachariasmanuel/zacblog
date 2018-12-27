@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Google App Script on zachariasmanuel.com</title>
-    <link>https://www.zachariasmanuel.com/tags/google-app-script/</link>
-    <description>Recent content in Google App Script on zachariasmanuel.com</description>
+    <title>Csv Creator on zachariasmanuel.com</title>
+    <link>https://www.zachariasmanuel.com/tags/csv-creator/</link>
+    <description>Recent content in Csv Creator on zachariasmanuel.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 27 Dec 2018 12:15:00 +0530</lastBuildDate>
     
-	<atom:link href="https://www.zachariasmanuel.com/tags/google-app-script/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.zachariasmanuel.com/tags/csv-creator/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,18 +19,6 @@
       <guid>https://www.zachariasmanuel.com/article/create-csv-file-from-google-spreadsheet/</guid>
       <description>Hello! It is very easy to create a CSV file from data in a Google spreadsheet using Google Apps Script. I have written this code for creating CSV file with email IDs to import in Google groups as it is very difficult to copy paste the emails IDs manually.
 1. Open your spreadsheet that contains the data
-2. Open the script editor. Tools -&amp;gt; Script Editor
-3. Copy and paste the below code to the script editor and save the script with a name.</description>
-    </item>
-    
-    <item>
-      <title>Extract email IDs from Gmail</title>
-      <link>https://www.zachariasmanuel.com/article/extract-email-ids-from-gmail/</link>
-      <pubDate>Wed, 19 Dec 2018 11:30:00 +0530</pubDate>
-      
-      <guid>https://www.zachariasmanuel.com/article/extract-email-ids-from-gmail/</guid>
-      <description>Hey people! Writing after a long time. Today I will explain how to scan your Gmail and extract all email IDs to a Google spreadsheet using Google apps script.
-1. Go to google drive, create a new spreadsheet and give it a name.
 2. Open the script editor. Tools -&amp;gt; Script Editor
 3. Copy and paste the below code to the script editor and save the script with a name.</description>
     </item>
