@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.zachariasmanuel.com/article/create-csv-file-from-google-spreadsheet/</loc>
+    <lastmod>2018-12-27T12:15:00+05:30</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.zachariasmanuel.com/article/extract-email-ids-from-gmail/</loc>
     <lastmod>2018-12-19T11:30:00+05:30</lastmod>
   </url>
@@ -44,6 +49,24 @@
   </url>
   
   <url>
+    <loc>https://www.zachariasmanuel.com/tags/create-file-in-google-drive/</loc>
+    <lastmod>2018-12-27T12:15:00+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.zachariasmanuel.com/tags/csv-creator/</loc>
+    <lastmod>2018-12-27T12:15:00+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.zachariasmanuel.com/tags/email-csv/</loc>
+    <lastmod>2018-12-27T12:15:00+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://www.zachariasmanuel.com/tags/email-extract/</loc>
     <lastmod>2018-12-19T11:30:00+05:30</lastmod>
     <priority>0</priority>
@@ -75,13 +98,13 @@
   
   <url>
     <loc>https://www.zachariasmanuel.com/tags/google-app-script/</loc>
-    <lastmod>2018-12-19T11:30:00+05:30</lastmod>
+    <lastmod>2018-12-27T12:15:00+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.zachariasmanuel.com/tags/google-script/</loc>
-    <lastmod>2018-12-19T11:30:00+05:30</lastmod>
+    <lastmod>2018-12-27T12:15:00+05:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -93,13 +116,19 @@
   
   <url>
     <loc>https://www.zachariasmanuel.com/post/</loc>
-    <lastmod>2018-12-19T11:30:00+05:30</lastmod>
+    <lastmod>2018-12-27T12:15:00+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.zachariasmanuel.com/tags/scan-email/</loc>
     <lastmod>2018-12-19T11:30:00+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.zachariasmanuel.com/tags/spreadsheet/</loc>
+    <lastmod>2018-12-27T12:15:00+05:30</lastmod>
     <priority>0</priority>
   </url>
   
@@ -111,13 +140,13 @@
   
   <url>
     <loc>https://www.zachariasmanuel.com/tags/zac/</loc>
-    <lastmod>2018-12-19T11:30:00+05:30</lastmod>
+    <lastmod>2018-12-27T12:15:00+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.zachariasmanuel.com/</loc>
-    <lastmod>2018-12-19T11:30:00+05:30</lastmod>
+    <lastmod>2018-12-27T12:15:00+05:30</lastmod>
     <priority>0</priority>
   </url>
   
