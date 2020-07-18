@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>zachariasmanuel.com</title>
-    <link>https://www.zachariasmanuel.com/</link>
-    <description>Recent content on zachariasmanuel.com</description>
+    <title>Zacs Blog</title>
+    <link>https://blog.zachariasmanuel.com/</link>
+    <description>Recent content on Zacs Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 27 Dec 2018 12:15:00 +0530</lastBuildDate>
     
-	<atom:link href="https://www.zachariasmanuel.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.zachariasmanuel.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Create CSV file from Google Spreadsheet</title>
-      <link>https://www.zachariasmanuel.com/article/create-csv-file-from-google-spreadsheet/</link>
+      <link>https://blog.zachariasmanuel.com/article/create-csv-file-from-google-spreadsheet/</link>
       <pubDate>Thu, 27 Dec 2018 12:15:00 +0530</pubDate>
       
-      <guid>https://www.zachariasmanuel.com/article/create-csv-file-from-google-spreadsheet/</guid>
+      <guid>https://blog.zachariasmanuel.com/article/create-csv-file-from-google-spreadsheet/</guid>
       <description>Hello! It is very easy to create a CSV file from data in a Google spreadsheet using Google Apps Script. I have written this code for creating CSV file with email IDs to import in Google groups as it is very difficult to copy paste the emails IDs manually. The aim of this post is to explain how to create files and folders using Google script.
 1. Open your spreadsheet that contains the data</description>
     </item>
     
     <item>
       <title>Extract email IDs from Gmail</title>
-      <link>https://www.zachariasmanuel.com/article/extract-email-ids-from-gmail/</link>
+      <link>https://blog.zachariasmanuel.com/article/extract-email-ids-from-gmail/</link>
       <pubDate>Wed, 19 Dec 2018 11:30:00 +0530</pubDate>
       
-      <guid>https://www.zachariasmanuel.com/article/extract-email-ids-from-gmail/</guid>
+      <guid>https://blog.zachariasmanuel.com/article/extract-email-ids-from-gmail/</guid>
       <description>Hey people! Writing after a long time. Today I will explain how to scan your Gmail and extract all email IDs to a Google spreadsheet using Google apps script.
 1. Go to google drive, create a new spreadsheet and give it a name.
 2. Open the script editor. Tools -&amp;gt; Script Editor
@@ -35,38 +35,38 @@
     
     <item>
       <title>Scan and copy all the music files in a directory</title>
-      <link>https://www.zachariasmanuel.com/article/scan-and-copy-all-the-music-files-in-a-directory/</link>
+      <link>https://blog.zachariasmanuel.com/article/scan-and-copy-all-the-music-files-in-a-directory/</link>
       <pubDate>Wed, 13 Apr 2016 17:18:00 +0530</pubDate>
       
-      <guid>https://www.zachariasmanuel.com/article/scan-and-copy-all-the-music-files-in-a-directory/</guid>
+      <guid>https://blog.zachariasmanuel.com/article/scan-and-copy-all-the-music-files-in-a-directory/</guid>
       <description>Hey guys! Wrting after a short break and hoping to keep it on from now on. So here&amp;rsquo;s the thing. I love listening to music and I had lots of different music in my mac&amp;rsquo;s music folder. I used to copy collections from my friends and add them to my music folder. And after a certain point, I started loosing track of what&amp;rsquo;s there. Because each folder would have subfolders. And I found multiple copies of the same music in different folders.</description>
     </item>
     
     <item>
       <title>Bulk Download Facebook Photos</title>
-      <link>https://www.zachariasmanuel.com/article/bulk-download-facebook-photos/</link>
+      <link>https://blog.zachariasmanuel.com/article/bulk-download-facebook-photos/</link>
       <pubDate>Wed, 17 Jun 2015 00:29:19 +0530</pubDate>
       
-      <guid>https://www.zachariasmanuel.com/article/bulk-download-facebook-photos/</guid>
+      <guid>https://blog.zachariasmanuel.com/article/bulk-download-facebook-photos/</guid>
       <description>Occasionally we download a lot of photos from Facebook. Downloading photos is really simple too : Just right click the mouse and select save image as. But what if you want to download bulk images, like 50 or 100 (for instance, you are into this girl and you want to save all the best albums of your crush) ? Will you select each and every pic and do the same process?</description>
     </item>
     
     <item>
       <title>Set receiving timer for Gmail incoming mails..</title>
-      <link>https://www.zachariasmanuel.com/article/set-receiving-timer-for-gmail-incoming-mails../</link>
+      <link>https://blog.zachariasmanuel.com/article/set-receiving-timer-for-gmail-incoming-mails../</link>
       <pubDate>Tue, 14 Oct 2014 00:29:19 +0530</pubDate>
       
-      <guid>https://www.zachariasmanuel.com/article/set-receiving-timer-for-gmail-incoming-mails../</guid>
+      <guid>https://blog.zachariasmanuel.com/article/set-receiving-timer-for-gmail-incoming-mails../</guid>
       <description>Sometimes, receiving mails continuously can be such a pain. If you are facing this problem, and if you are a Gmail user, be happy to know that it is possible to adjust Gmail to let in the incoming mail at a specified time. You can pause the inbox to block the mails coming to your inbox.
 1. Go to your Gmail inbox, Go to Settings and go to the tab named &amp;ldquo;labels&amp;rdquo;.</description>
     </item>
     
     <item>
       <title>Install .bar file on BB10 devices</title>
-      <link>https://www.zachariasmanuel.com/article/install-.bar-file-on-bb10-devices/</link>
+      <link>https://blog.zachariasmanuel.com/article/install-.bar-file-on-bb10-devices/</link>
       <pubDate>Sat, 04 Oct 2014 00:29:19 +0530</pubDate>
       
-      <guid>https://www.zachariasmanuel.com/article/install-.bar-file-on-bb10-devices/</guid>
+      <guid>https://blog.zachariasmanuel.com/article/install-.bar-file-on-bb10-devices/</guid>
       <description>Please follow the steps for installing .bar file into BB10 devices using Chrome.
 1. Go to the chrome web store, search for BB10 app manager and add the extension to your chrome.
 2. Connect BB10 device to your computer using USB cable. And turn on the development mode on your phone. Enter the device password to enable development mode. If you have no password for the device it will ask to create new password.</description>

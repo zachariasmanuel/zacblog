@@ -1,139 +1,139 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on zachariasmanuel.com</title>
-    <link>https://www.zachariasmanuel.com/tags/</link>
-    <description>Recent content in Tags on zachariasmanuel.com</description>
+    <title>Tags on Zacs Blog</title>
+    <link>https://blog.zachariasmanuel.com/tags/</link>
+    <description>Recent content in Tags on Zacs Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 17 Jun 2015 00:29:19 +0530</lastBuildDate>
     
-	<atom:link href="https://www.zachariasmanuel.com/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.zachariasmanuel.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Bulk Download</title>
-      <link>https://www.zachariasmanuel.com/tags/bulk-download/</link>
+      <link>https://blog.zachariasmanuel.com/tags/bulk-download/</link>
       <pubDate>Wed, 17 Jun 2015 00:29:19 +0530</pubDate>
       
-      <guid>https://www.zachariasmanuel.com/tags/bulk-download/</guid>
+      <guid>https://blog.zachariasmanuel.com/tags/bulk-download/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Create File in Google Drive</title>
-      <link>https://www.zachariasmanuel.com/tags/create-file-in-google-drive/</link>
+      <link>https://blog.zachariasmanuel.com/tags/create-file-in-google-drive/</link>
       <pubDate>Thu, 27 Dec 2018 12:15:00 +0530</pubDate>
       
-      <guid>https://www.zachariasmanuel.com/tags/create-file-in-google-drive/</guid>
+      <guid>https://blog.zachariasmanuel.com/tags/create-file-in-google-drive/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Csv Creator</title>
-      <link>https://www.zachariasmanuel.com/tags/csv-creator/</link>
+      <link>https://blog.zachariasmanuel.com/tags/csv-creator/</link>
       <pubDate>Thu, 27 Dec 2018 12:15:00 +0530</pubDate>
       
-      <guid>https://www.zachariasmanuel.com/tags/csv-creator/</guid>
+      <guid>https://blog.zachariasmanuel.com/tags/csv-creator/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Email Csv</title>
-      <link>https://www.zachariasmanuel.com/tags/email-csv/</link>
+      <link>https://blog.zachariasmanuel.com/tags/email-csv/</link>
       <pubDate>Thu, 27 Dec 2018 12:15:00 +0530</pubDate>
       
-      <guid>https://www.zachariasmanuel.com/tags/email-csv/</guid>
+      <guid>https://blog.zachariasmanuel.com/tags/email-csv/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Email Extract</title>
-      <link>https://www.zachariasmanuel.com/tags/email-extract/</link>
+      <link>https://blog.zachariasmanuel.com/tags/email-extract/</link>
       <pubDate>Wed, 19 Dec 2018 11:30:00 +0530</pubDate>
       
-      <guid>https://www.zachariasmanuel.com/tags/email-extract/</guid>
+      <guid>https://blog.zachariasmanuel.com/tags/email-extract/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Email Id Extract</title>
-      <link>https://www.zachariasmanuel.com/tags/email-id-extract/</link>
+      <link>https://blog.zachariasmanuel.com/tags/email-id-extract/</link>
       <pubDate>Wed, 19 Dec 2018 11:30:00 +0530</pubDate>
       
-      <guid>https://www.zachariasmanuel.com/tags/email-id-extract/</guid>
+      <guid>https://blog.zachariasmanuel.com/tags/email-id-extract/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Email Scanner</title>
-      <link>https://www.zachariasmanuel.com/tags/email-scanner/</link>
+      <link>https://blog.zachariasmanuel.com/tags/email-scanner/</link>
       <pubDate>Wed, 19 Dec 2018 11:30:00 +0530</pubDate>
       
-      <guid>https://www.zachariasmanuel.com/tags/email-scanner/</guid>
+      <guid>https://blog.zachariasmanuel.com/tags/email-scanner/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Facebook Photo Download</title>
-      <link>https://www.zachariasmanuel.com/tags/facebook-photo-download/</link>
+      <link>https://blog.zachariasmanuel.com/tags/facebook-photo-download/</link>
       <pubDate>Wed, 17 Jun 2015 00:29:19 +0530</pubDate>
       
-      <guid>https://www.zachariasmanuel.com/tags/facebook-photo-download/</guid>
+      <guid>https://blog.zachariasmanuel.com/tags/facebook-photo-download/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Gmail</title>
-      <link>https://www.zachariasmanuel.com/tags/gmail/</link>
+      <link>https://blog.zachariasmanuel.com/tags/gmail/</link>
       <pubDate>Wed, 19 Dec 2018 11:30:00 +0530</pubDate>
       
-      <guid>https://www.zachariasmanuel.com/tags/gmail/</guid>
+      <guid>https://blog.zachariasmanuel.com/tags/gmail/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Google App Script</title>
-      <link>https://www.zachariasmanuel.com/tags/google-app-script/</link>
+      <link>https://blog.zachariasmanuel.com/tags/google-app-script/</link>
       <pubDate>Thu, 27 Dec 2018 12:15:00 +0530</pubDate>
       
-      <guid>https://www.zachariasmanuel.com/tags/google-app-script/</guid>
+      <guid>https://blog.zachariasmanuel.com/tags/google-app-script/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Google Script</title>
-      <link>https://www.zachariasmanuel.com/tags/google-script/</link>
+      <link>https://blog.zachariasmanuel.com/tags/google-script/</link>
       <pubDate>Thu, 27 Dec 2018 12:15:00 +0530</pubDate>
       
-      <guid>https://www.zachariasmanuel.com/tags/google-script/</guid>
+      <guid>https://blog.zachariasmanuel.com/tags/google-script/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Scan Email</title>
-      <link>https://www.zachariasmanuel.com/tags/scan-email/</link>
+      <link>https://blog.zachariasmanuel.com/tags/scan-email/</link>
       <pubDate>Wed, 19 Dec 2018 11:30:00 +0530</pubDate>
       
-      <guid>https://www.zachariasmanuel.com/tags/scan-email/</guid>
+      <guid>https://blog.zachariasmanuel.com/tags/scan-email/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Spreadsheet</title>
-      <link>https://www.zachariasmanuel.com/tags/spreadsheet/</link>
+      <link>https://blog.zachariasmanuel.com/tags/spreadsheet/</link>
       <pubDate>Thu, 27 Dec 2018 12:15:00 +0530</pubDate>
       
-      <guid>https://www.zachariasmanuel.com/tags/spreadsheet/</guid>
+      <guid>https://blog.zachariasmanuel.com/tags/spreadsheet/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Zac</title>
-      <link>https://www.zachariasmanuel.com/tags/zac/</link>
+      <link>https://blog.zachariasmanuel.com/tags/zac/</link>
       <pubDate>Thu, 27 Dec 2018 12:15:00 +0530</pubDate>
       
-      <guid>https://www.zachariasmanuel.com/tags/zac/</guid>
+      <guid>https://blog.zachariasmanuel.com/tags/zac/</guid>
       <description></description>
     </item>
     

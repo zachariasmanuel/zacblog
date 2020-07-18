@@ -1,6 +1,6 @@
-baseurl = "https://www.zachariasmanuel.com"
+baseurl = "https://blog.zachariasmanuel.com"
 languageCode = "en-us"
-title = "zachariasmanuel.com"
+title = "Zacs Blog"
 MetaDataFormat = "toml"
 theme = "slender"
 paginate = 3
@@ -21,13 +21,13 @@ PaginatePath = "/"
 
     # Change the color scheme of Slender.
     # See above for preview and list of color schemes.
-    colorscheme = "blue"
+    colorscheme = "white"
 
     # Tagline; HTML accepted here. Keep it concise.
     tagline = "</br>"
 
     # Footer; Markdown accepted here.
-    footer = "Copyright 2018 &copy; Zacharias Manuel"
+    footer = "Copyright 2020 &copy; Zacharias Manuel"
 
     # Description and keywords for <meta> tags.
     # Remember to set this for your main page.
